@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#444444"
+        android:hint="|"
+        android:textColor="#DDDDDD"
+        android:textColorHint="#DDDDDD"
+        android:maxLength="15"
+        android:padding="10dp"
+        android:gravity="right|center_vertical|bottom"
+        android:textSize="60dp" />
+    <!--first row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="#444444">
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:onClick="digitClick"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:onClick="digitClick"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:layout_weight="1"
+            android:onClick="digitClick"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/quotient"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF8502"
+            android:onClick="operatorClick"
+            android:text="/" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--second row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#444444">
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:onClick="digitClick"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:onClick="digitClick"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:onClick="digitClick"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF8502"
+            android:onClick="operatorClick"
+            android:text="X" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--third row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#444444">
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:onClick="digitClick"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:onClick="digitClick"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:onClick="digitClick"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/difference"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF8502"
+            android:onClick="operatorClick"
+            android:text="-" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--fourth row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#444444">
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DDDDDD"
+            android:textColor="#222222"
+            android:textSize="24dp"
+            android:onClick="digitClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:onClick="clearOnce"
+            android:textSize="24dp"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/decimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:onClick="dotClick"
+            android:textSize="24dp"
+            android:text="." />
+
+        <Button
+            android:id="@+id/sum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:onClick="operatorClick"
+            android:backgroundTint="#FF8502"
+            android:text="+" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--fifth row-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#444444">
+        <Button
+            android:id="@+id/all_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:onClick="clearText"
+            android:text="AC" />
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:onClick="onEqual"
+            android:text="=" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
